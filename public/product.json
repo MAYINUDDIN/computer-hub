@@ -1,0 +1,90 @@
+[
+    {
+        "id": 1,
+        "name": "Samsung Model: LF22T350",
+        "email": "mainu768971@gmail.com",
+        "min_quantity": 40,
+        "available_quantity": 100,
+        "supplier": "Mayin",
+        "price": "800",
+        "description": "22 (1,920 x 1,080) FHD IPS Display,AMD Radeon FreeSync,Max 75Hz Refresh Rate,3-sided border-less screen.",
+        "img": "https://5.imimg.com/data5/SELLER/Default/2020/10/ZF/DE/OL/87393297/samsung-desktop-500x500.jpg"
+    },
+    {
+        "id": 2,
+        "name": "550W Sleeve Cable Power Supply",
+        "email": "mayin@student.wub.edu.bd",
+        "price": "80",
+        "min_quantity": 40,
+        "available_quantity": 80,
+        "supplier": "Atik",
+        "description": "MPN: PS-LTP-0550NPCNEU-2, Model: Thermaltake Litepower,Ultra Quiet Fan, Cables with High Flexibility,High-Quality Components,Massive and Dedicated +12V Output",
+        "img": "https://static-01.daraz.com.bd/p/283080b9d6f00d3b349aaf8a9e38819e.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Patriot 4GB DDR3 ",
+        "email": "sabuj@gmail.com",
+        "price": "60",
+        "min_quantity": 40,
+        "available_quantity": 90,
+        "supplier": "Nazmul",
+        "description": "MPN: PSD34G133381,Model: Patriot 4GB 1333MHz, Type: DDR3,Capacity: 4 GB, Timings: CL9 9-9",
+        "img": "https://cdn.mos.cms.futurecdn.net/WiXwAxYJh7TPwgaCThExnL.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Cooling Fan",
+        "email": "0318402483@student.wub.edu.bd",
+        "price": "30",
+        "min_quantity": 40,
+        "available_quantity": 150,
+        "supplier": "Shaon",
+        "description": "Model: XFAN 120,High-quality 120mm black material fan structure,Low-speed RPM to ensure quiet operation,Fan Speed: 1300±10%RPM, Max. Air Flow: 43.56CFM",
+        "img": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/25/AMD_heatsink_and_fan.jpg/1200px-AMD_heatsink_and_fan.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Processor, Core i7",
+        "email": "asif@gmail.com",
+        "price": "109.45",
+        "min_quantity": 40,
+        "available_quantity": 150,
+        "supplier": "Junayed",
+        "description": "Model: Intel Core i3 10100,Socket Supported FCLGA1200, Speed 3.60 up to 4.30 GHz,Cores- 4 & Threads- 8,6M Cache",
+        "img": "https://www.bdstall.com/asset/product-image/giant_141586.jpg"
+    },
+    {
+        "id": 6,
+        "name": "MotherBoard Asus",
+        "email": "0318402483@student.wub.edu.bd",
+        "price": "310",
+        "min_quantity": 40,
+        "available_quantity": 140,
+        "supplier": "Imran",
+        "description": "Model: A520M-HDV & Ryzen 5 5600G,Motherboard supports 1 x PCIe 3.0 x16, 1 x PCIe 3.0 x1,Graphics Output Options: D-Sub, DVI-D, HDMI, Processor speed: 3.9GHz up to 4.4GHz",
+        "img": "https://www.legitreviews.com/images/reviews/1500/asus_p8p67_deluxe_2.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Apple laptop",
+        "email": "sajib@gmail.com",
+        "price": "200",
+        "min_quantity": 40,
+        "available_quantity": 110,
+        "supplier": "Tanvir",
+        "description": "They come in different models such as the Intel 2.33GHz Core 2 Duo seen in the Apple MacBook pro, the 2.16Hz white Macbook, and others, all combining speed and design.",
+        "img": "https://i.ibb.co/FJKgQLT/6a46a252-b366-4a34-b108-5153b4fc3eb4-1-d03c3a14d6325726d8dd63958d8806b1.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Avita Essential Laptop",
+        "email": "0318402483@student.wub.edu.bd",
+        "price": "700",
+        "min_quantity": 40,
+        "available_quantity": 102,
+        "supplier": "Imran",
+        "description": "The Avita Essential Price is set for India at Rs. 17,990. If you want to book this then it is available on the Amazon shopping site.",
+        "img": "https://i.ibb.co/ctwrzsL/939c7858-36db-4d57-8bbb-ef543092aefa-0593257cdb1160afb0a2da7bb8eac739.jpg"
+    }
+]
