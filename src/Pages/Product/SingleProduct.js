@@ -16,7 +16,8 @@ const SingleProduct = ({ product }) => {
                 <p class='m-0'>Available Quantity: {available_quantity}</p>
                 <p className='text-justify'>{description}</p>
                 <div class="card-actions">
-                    <button class="btn btn-primary btn-md rounded px-12">Buy Now</button>
+                    <Link to='/buynow'>                    <button class="btn btn-primary btn-md rounded px-12">Buy Now </button></Link>
+
                 </div>
             </div>
         </div>
