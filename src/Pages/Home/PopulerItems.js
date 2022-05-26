@@ -1,6 +1,7 @@
 import React from 'react';
-import slider1 from '../../assets/images/slider1.jpg';
-import slider2 from '../../assets/images/slider2.jpg';
+import slider1 from '../../assets/images/s2 (1).jpg';
+import slider2 from '../../assets/images/s2 (1).png';
+import slider3 from '../../assets/images/s2 (3).jpg';
 const PopulerItems = () => {
     return (
         <div>
@@ -15,14 +16,18 @@ const PopulerItems = () => {
                         <img src={slider2} class="w-full" />
                     </div>
 
+                    <div id="item3" class="carousel-item w-full">
+                        <img src={slider3} class="w-full" />
+                    </div>
+
                 </div>
 
                 <div class="carousel w-full">
 
-                    <div id="item3" class="carousel-item w-full">
-                        <img src={slider2} class="w-full" />
-                    </div>
                     <div id="item4" class="carousel-item w-full">
+                        <img src={slider3} class="w-full" />
+                    </div>
+                    <div id="item5" class="carousel-item w-full">
                         <img src={slider1} class="w-full" />
                     </div>
                 </div>
@@ -33,6 +38,7 @@ const PopulerItems = () => {
                 <a href="#item2" class="btn btn-primary btn-xs">2</a>
                 <a href="#item3" class="btn btn-primary btn-xs">3</a>
                 <a href="#item4" class="btn btn-primary btn-xs">4</a>
+                <a href="#item5" class="btn btn-primary btn-xs">5</a>
             </div>
 
         </div>

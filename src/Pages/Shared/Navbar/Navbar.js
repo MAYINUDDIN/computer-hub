@@ -12,11 +12,11 @@ const Navbar = () => {
     };
     const menuitem = <>
         <li className=''><NavLink to='/'> <AiTwotoneHome /> Home</NavLink></li>
-        <li className='ml-1 '><NavLink className='' to='/appointment'>Products</NavLink></li>
+        <li className='ml-1 '><NavLink className='' to='/products'>Products</NavLink></li>
         <li className='ml-1'><NavLink to='/accessories'>Accessories</NavLink></li>
         <li className='ml-1'><NavLink to='/review'>Reviews</NavLink></li>
         <li className='ml-1'><NavLink to='/blogs'>Blogs</NavLink></li>
-        <li className='ml-1'><NavLink to='/about'>About</NavLink></li>
+        <li className='ml-1'><NavLink to='/profile'>My Profile</NavLink></li>
         <li className='ml-1'><NavLink to='/contact'>Contact Us</NavLink></li>
         <li className=''>{user ? <button onClick={logout} class="btn btn-ghost">Sign Out</button> : <NavLink to='/login'>Login</NavLink>}</li>
     </>
