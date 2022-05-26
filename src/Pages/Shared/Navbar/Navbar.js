@@ -13,7 +13,7 @@ const Navbar = () => {
     const menuitem = <>
         <li className=''><NavLink to='/'> <AiTwotoneHome /> Home</NavLink></li>
         <li className='ml-1 '><NavLink className='' to='/products'>Products</NavLink></li>
-        <li className='ml-1'><NavLink to='/accessories'>Accessories</NavLink></li>
+        <li className='ml-1'><NavLink to='/dashboard'>Dashboard</NavLink></li>
         <li className='ml-1'><NavLink to='/review'>Reviews</NavLink></li>
         <li className='ml-1'><NavLink to='/blogs'>Blogs</NavLink></li>
         <li className='ml-1'><NavLink to='/profile'>My Profile</NavLink></li>

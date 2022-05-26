@@ -53,16 +53,16 @@ const Portfolio = () => {
                     </div>
                 </div>
             </div>
-            <div className='text-center py-4 mt-4'>
-                <h2 className='text-2xl font-bold text-lime-700 mb-6 shadow-lg py-2 w-40 mx-auto'>My Skill</h2>
+            <div className='text-center shadow-lg bordered py-4 mt-4'>
+                <h2 className='text-2xl font-bold text-lime-700 mb-6 drop-shadow py-2 w-40 mx-auto'>My Skills </h2>
                 <div className='grid grid-cols-1 md:grid-cols-2'>
                     <div>
                         <h1 className='text-xl font-bold mb-5 text-orange-500'>Web Design</h1>
                         <div className='grid grid-cols-1 gap-5 justify-items-center'>
                             <p>HTML</p>
-                            <progress className="progress progress-primary w-56" value="95" max="100"></progress>
+                            <progress className="progress progress-success w-56" value="95" max="100"></progress>
                             <p>CSS</p>
-                            <progress className="progress progress-primary w-56" value="80" max="100"></progress>
+                            <progress className="progress progress-success w-56" value="80" max="100"></progress>
                             <p>Tailwind</p>
                             <progress className="progress progress-primary w-56" value="70" max="100"></progress>
                             <p>Bootstrap</p>
@@ -80,15 +80,18 @@ const Portfolio = () => {
                             <progress className="progress progress-primary w-56" value="50" max="100"></progress>
                             <p>mongodb</p>
                             <progress className="progress progress-primary w-56" value="50" max="100"></progress>
+                            <p>PHP</p>
+                            <progress className="progress progress-primary w-56" value="70" max="100"></progress>
+
                         </div>
                     </div>
                 </div>
             </div>
-            <div className='text-center mt-8'>
-                <h4 className='text-xl font-bold mb-3'>My Completed Project</h4>
-                <p><a target='_blank' className='underline' href="https://scintillating-quokka-d477fd.netlify.app/">https://scintillating-quokka-d477fd.netlify.app/</a></p>
-                <p><a target='_blank' className='underline my-4' href="https://sparkly-travesseiro-3c9d55.netlify.app/">https://sparkly-travesseiro-3c9d55.netlify.app/</a></p>
-                <p><a target='_blank' className='underline' href="https://velvety-palmier-679f13.netlify.app/">https://velvety-palmier-679f13.netlify.app/</a></p>
+            <div className='text-center mt-8 shadow-lg p-5'>
+                <h4 className='text-2xl text-success drop-shadow font-bold mb-3'>My Completed Project</h4>
+                <p><a target='_blank' className='underline' href="https://laptop-bazar-mayin.netlify.app/">https://laptop-bazar-mayin.netlify.app/</a></p>
+                <p><a target='_blank' className='underline my-4' href="https://discovery-bangladesh.netlify.app/">https://discovery-bangladesh.netlify.app/</a></p>
+                <p><a target='_blank' className='underline' href="https://boisterous-concha-6acbfe.netlify.app/">https://boisterous-concha-6acbfe.netlify.app/</a></p>
 
             </div>
         </div>

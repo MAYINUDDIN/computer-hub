@@ -13,7 +13,6 @@ const Home = () => {
             <PopulerItems></PopulerItems>
             <Summary></Summary>
 
-            <Footer></Footer>
         </div>
     );
 };
