@@ -142,8 +142,8 @@ const BuyNow = () => {
                             <input type="text" name='phone' placeholder="Phone" className="input input-bordered w-full max-w-xs" />
                             <input type="submit" value='Confirm' className="btn btn-primary input-bordered w-full max-w-xs" />
                         </form>
-                        <div className="modal-action">
-                            <label for="confirm_purchase" className="btn">Cancel</label>
+                        <div className="modal-action justify-center rounded">
+                            <label for="confirm_purchase" className="btn bg-red-500 btn-sm">Cancel</label>
                         </div>
                     </div>
                 </div>

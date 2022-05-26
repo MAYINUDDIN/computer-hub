@@ -4,6 +4,7 @@ import AllProduct from '../Product/AllProduct';
 import Banner from './Banner';
 import PopulerItems from './PopulerItems';
 import Summary from './Summary';
+import CustomerReview from './CustomerReview';
 
 const Home = () => {
     return (
@@ -12,6 +13,7 @@ const Home = () => {
             <AllProduct></AllProduct>
             <PopulerItems></PopulerItems>
             <Summary></Summary>
+            <CustomerReview></CustomerReview>
 
         </div>
     );
