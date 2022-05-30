@@ -1,11 +1,11 @@
-# Automotive Parts Manufacturing
+# Computer Hub
 # Description
 I feel much better now than I was scared at the begining of this assignment. this assignment was not difficult but it was tricky. Alhamdulillah I was able to do it even then.
 
-Live site link: https://scintillating-quokka-d477fd.netlify.app/
+Live site link: 
 
 ## Features and functionality.
-* only six items for car parts in Home page and All parts in Manage All products route.
+* only six items for PC parts in Home page and All parts in Manage All products route.
 * Create Register route for new user and login route for already user.
 * Make private route for Dashboard and Private Admin route for only admin permission route.
 * Blogs route for five question with answer and portfolio route created.
