@@ -2,7 +2,7 @@
 # Description
 I feel much better now than I was scared at the begining of this assignment. this assignment was not difficult but it was tricky. Alhamdulillah I was able to do it even then.
 
-Live site link: 
+Live site link: https://computerhubmainu.netlify.app/
 
 ## Features and functionality.
 * only six items for PC parts in Home page and All parts in Manage All products route.
