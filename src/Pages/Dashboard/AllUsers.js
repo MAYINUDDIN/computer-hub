@@ -6,13 +6,13 @@ import RowUser from './RowUser';
 const AllUsers = () => {
     // const [allusers, setAllusers] = useState([]);
     // useEffect(() => {
-    //     const url = `https://still-coast-61974.herokuapp.com/user`;
+    //     const url = `https://gentle-springs-84532.herokuapp.com/user`;
     //     fetch(url)
     //         .then(res => res.json())
     //         .then(data => setAllusers(data))
 
     // }, []);
-    const { data: allusers, isLoading, refetch } = useQuery('allusers', () => fetch('https://still-coast-61974.herokuapp.com/user', {
+    const { data: allusers, isLoading, refetch } = useQuery('allusers', () => fetch('https://gentle-springs-84532.herokuapp.com/user', {
         method: 'GET',
         headers: {
             'authorization': `Bearer ${localStorage.getItem('accessToken')}`

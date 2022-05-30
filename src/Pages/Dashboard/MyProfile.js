@@ -8,7 +8,7 @@ const MyProfile = () => {
     const [profiles, setProfiles] = useState([]);
     const [relode, setRelode] = useState(false);
     useEffect(() => {
-        const url = `https://still-coast-61974.herokuapp.com/profile`;
+        const url = `https://gentle-springs-84532.herokuapp.com/profile`;
         fetch(url)
             .then(res => res.json())
             .then(data => setProfiles(data))
@@ -27,7 +27,7 @@ const MyProfile = () => {
 
         const updateProfile = { name, email, education, district, phone, linkdien };
 
-        const url = `https://still-coast-61974.herokuapp.com/profile`;
+        const url = `https://gentle-springs-84532.herokuapp.com/profile`;
         fetch(url, {
             method: "POST",
             headers: {

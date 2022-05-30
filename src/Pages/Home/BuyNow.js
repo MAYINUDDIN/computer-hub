@@ -17,7 +17,7 @@ const BuyNow = () => {
 
 
     useEffect(() => {
-        const url = `https://still-coast-61974.herokuapp.com/product/${id}`;
+        const url = `https://gentle-springs-84532.herokuapp.com/product/${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -39,7 +39,7 @@ const BuyNow = () => {
             exist.avlbQuantity = parseInt(exist.avlbQuantity) - 1;
             const increseQuantity = exist.avlbQuantity;
 
-            const url = `https://still-coast-61974.herokuapp.com/product/${id}`;
+            const url = `https://gentle-springs-84532.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -66,7 +66,7 @@ const BuyNow = () => {
         if (exist) {
             exist.avlbQuantity = parseInt(exist.avlbQuantity) + 1;
             const reduceQuantity = exist.avlbQuantity;
-            const url = `https://still-coast-61974.herokuapp.com/product/${id}`;
+            const url = `https://gentle-springs-84532.herokuapp.com/product/${id}`;
             fetch(url, {
                 method: 'PUT',
                 headers: {
@@ -92,7 +92,7 @@ const BuyNow = () => {
         const phone = event.target.phone.value;
         const purchase = { product, name, email, quantity, address, phone }
 
-        fetch('https://still-coast-61974.herokuapp.com/order', {
+        fetch('https://gentle-springs-84532.herokuapp.com/order', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

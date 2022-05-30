@@ -5,7 +5,7 @@ import Loading from '../Loading/Loading';
 const CustomerReview = () => {
     const [reviews, setReviews] = useState([]);
     useEffect(() => {
-        const url = `https://still-coast-61974.herokuapp.com/review`;
+        const url = `https://gentle-springs-84532.herokuapp.com/review`;
         fetch(url)
             .then(res => res.json())
             .then(data => setReviews(data))
