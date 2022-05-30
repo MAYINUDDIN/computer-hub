@@ -6,7 +6,7 @@ import { FaAddressBook, FaPhoneVolume, FaMailBulk } from 'react-icons/fa';
 const NewsFeed = () => {
     const [user] = useAuthState(auth);
     return (
-        <div className='py-8 px-12 bg-black opacity-80'>
+        <div className='py-8 px-12 bg-success text-white opacity-80'>
             <h3 className='text-center text-indigo-700 w-48 mx-auto py-2 font-bold text-3xl border-b-2 mb-4'>News Feed</h3>
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 text-center text-white'>
                 <div>

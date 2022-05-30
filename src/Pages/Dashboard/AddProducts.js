@@ -16,7 +16,7 @@ const AddProducts = () => {
         const img = event.target.img.value;
 
         const addItem = { name, email, price, minQuantity, avlbQuantity, description, img };
-        const url = `http://localhost:5000/product`;
+        const url = `https://still-coast-61974.herokuapp.com/product`;
         fetch(url, {
             method: "POST",
             headers: {

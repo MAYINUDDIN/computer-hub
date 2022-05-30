@@ -12,7 +12,7 @@ const MyOrder = () => {
     const navigate = useNavigate();
     useEffect(() => {
         const email = user.email;
-        const url = `http://localhost:5000/orders?email=${email}`;
+        const url = `https://still-coast-61974.herokuapp.com/orders?email=${email}`;
         fetch(url, {
             method: 'GET',
             headers: {
@@ -33,7 +33,7 @@ const MyOrder = () => {
     }, [user, navigate]);
 
     const handleDelete = id => {
-        const url = `http://localhost:5000/myorder/${id}`;
+        const url = `https://still-coast-61974.herokuapp.com/myorder/${id}`;
         fetch(url, {
             method: "DELETE"
         })

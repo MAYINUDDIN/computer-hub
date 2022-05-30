@@ -8,7 +8,7 @@ const Parts = () => {
     return (
         <div className='px-12 py-8'>
             <h1 className='text-center text-indigo-500 font-bold text-3xl'>Choose your parts for Purchase</h1>
-            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10'>
+            <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'>
                 {
                     products.length === 0 ? <p className='text-center'><Loading></Loading></p> : products.slice(-6).map(product =>
                         <Part
