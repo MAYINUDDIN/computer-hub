@@ -1,78 +1,51 @@
-
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
-import Blogs from './Pages/Blogs/Blogs';
-import BuyNow from './Pages/BuyNow/BuyNow';
-import Home from './Pages/Home/Home';
-import Login from './Pages/Login/Login';
-import RequireAuth from './Pages/Login/RequireAuth';
-import Signup from './Pages/Login/Signup';
-import Notfound from './Pages/NotFound/Notfound';
-import Portfolio from './Pages/Portfolio/Portfolio';
-import Footer from './Pages/Shared/Footer';
-import Navbar from './Pages/Shared/Navbar/Navbar';
-import PrivateRoute from '../src/Pages/PrivateRoute/PrivateRoute';
-import Dashboard from '../src/Pages/Dashboard/Dashboard';
-import MyOrder from '../src/Pages/Dashboard/MyOrder';
-import AddReview from '../src/Pages/Dashboard/AddReview';
-import MyProfile from '../src/Pages/Dashboard/MyProfile';
-import AllOrders from '../src/Pages/Dashboard/AllOrders';
-import AddProducts from '../src/Pages/Dashboard/AddProducts';
-import ManageProducts from '../src/Pages/Dashboard/ManageProducts';
-import AllUsers from '../src/Pages/Dashboard/AllUsers';
-import PrivateAdmin from '../src/Pages/PrivateRoute/PrivateAdmin';
-
-
+import Blogs from './pages/Blogs/Blogs';
+import Dashboard from './pages/Dashboard/Dashboard';
+import Footer from './pages/Footer/Footer';
+import BuyNow from './pages/Home/BuyNow';
+import Home from './pages/Home/Home';
+import Login from './pages/LoginPage/Login';
+import Register from './pages/LoginPage/Register';
+import Navbar from './pages/Navbar/Navbar';
+import NotFound from './pages/NotFound/NotFound';
+import Portfolio from './pages/Portfolio/Portfolio';
+import PrivateRoute from './pages/PrivateRoute/PrivateRoute';
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import MyOrder from './pages/Dashboard/MyOrder';
+import AddReview from './pages/Dashboard/AddReview';
+import MyProfile from './pages/Dashboard/MyProfile';
+import AllOrders from './pages/Dashboard/AllOrders';
+import AddProducts from './pages/Dashboard/AddProducts';
+import ManageProducts from './pages/Dashboard/ManageProducts';
+import AllUsers from './pages/Dashboard/AllUsers';
+import PrivateAdmin from './pages/PrivateRoute/PrivateAdmin';
 function App() {
   return (
-    <div className="App">
-
-
+    <div>
       <Navbar></Navbar>
-      <hr />
       <Routes>
-        <Route path='/' element={<Home />}>Home</Route>
-        <Route path='/profile' element={<Portfolio />}>Home</Route>
-        <Route path='/blogs' element={<Blogs />}>Home</Route>
-        <Route path='/login' element={<Login />}>login</Route>
-        <Route path='/signup' element={<Signup />}>signup</Route>
-        <Route path='*' element={<Notfound />}>signup</Route>
-
-        <Route path='/buynow/:id' element={
-          <RequireAuth>
-            <BuyNow />
-          </RequireAuth>
-        }>Buy Now</Route>
-
-        <Route path='/dashboard' element={<RequireAuth> <Dashboard /> </RequireAuth>}>
-
+        <Route path='/' element={<Home></Home>}></Route>
+        <Route path='/home' element={<Home></Home>}></Route>
+        <Route path='/portfolio' element={<Portfolio></Portfolio>}></Route>
+        <Route path='/blogs' element={<Blogs></Blogs>}></Route>
+        <Route path='/dashboard' element={<PrivateRoute><Dashboard></Dashboard></PrivateRoute>}>
           <Route index element={<MyOrder></MyOrder>}></Route>
           <Route path='addreview' element={<AddReview></AddReview>}></Route>
-          <Route path='allorder' element={<PrivateAdmin><AllOrders></AllOrders></PrivateAdmin>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
           <Route path='allorder' element={<PrivateAdmin><AllOrders></AllOrders></PrivateAdmin>}></Route>
           <Route path='addproducts' element={<PrivateAdmin><AddProducts></AddProducts></PrivateAdmin>}></Route>
           <Route path='allproducts' element={<PrivateAdmin><ManageProducts></ManageProducts></PrivateAdmin>}></Route>
           <Route path='allusers' element={<PrivateAdmin><AllUsers></AllUsers></PrivateAdmin>}></Route>
         </Route>
-
-
-
-
+        <Route path='/buynow/:id' element={<PrivateRoute><BuyNow></BuyNow></PrivateRoute>}></Route>
+        <Route path='/login' element={<Login></Login>}></Route>
+        <Route path='/register' element={<Register></Register>}></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
-
-
-      {/* <Route path='/dashboard' element={<RequireAuth><Dashboard></Dashboard></RequireAuth>}> </Route> */}
-      {/* <Route index element={<MyOrder></MyOrder>}></Route>
-      <Route path='addreview' element={<AddReview></AddReview>}></Route>
-      <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
-      <Route path='allorder' element={<PrivateAdmin><AllOrders></AllOrders></PrivateAdmin>}></Route>
-      <Route path='addproducts' element={<PrivateAdmin><AddProducts></AddProducts></PrivateAdmin>}></Route>
-      <Route path='allproducts' element={<PrivateAdmin><ManageProducts></ManageProducts></PrivateAdmin>}></Route>
-      <Route path='allusers' element={<PrivateAdmin><AllUsers></AllUsers></PrivateAdmin>}></Route> */}
-
-
       <Footer></Footer>
+      <ToastContainer />
     </div>
   );
 }

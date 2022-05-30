@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import Loading from '../../Pages/Shared/Loading';
+import Loading from '../Loading/Loading';
 
 const AllOrders = () => {
     const [allOrders, setAllOrders] = useState([]);

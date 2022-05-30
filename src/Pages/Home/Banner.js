@@ -1,6 +1,6 @@
 import React from 'react';
-import slider1 from '../../assets/images/slider1.jpg';
-import slider2 from '../../assets/images/slider2.jpg';
+import slider1 from '../../images/slider1.jpg';
+import slider2 from '../../images/slider2.jpg';
 const Banner = () => {
     return (
         <div class="carousel w-full min-h-full">

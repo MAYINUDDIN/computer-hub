@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useQuery } from 'react-query';
-import Loading from '../../Pages/Shared/Loading';
+import Loading from '../Loading/Loading';
 import RowUser from './RowUser';
 
 const AllUsers = () => {

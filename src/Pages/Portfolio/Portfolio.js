@@ -1,5 +1,5 @@
 import React from 'react';
-import myself from '../../assets/images/mainu.jpg';
+import myself from '../../images/myself.png';
 import './Portfolio.css';
 
 const Portfolio = () => {

@@ -3,10 +3,9 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 
 import { useLocation, Navigate } from "react-router-dom";
-import auth from '../../firebase.init';
-import Loading from '../../Pages/Shared/Loading';
-import useAdmin from '../../CustomHook/useAdmin';
-
+import auth from '../../Firebase/firebase.init';
+import useAdmin from '../CustomHook/useAdmin';
+import Loading from '../Loading/Loading';
 
 const PrivateAdmin = ({ children }) => {
     const [user, loading] = useAuthState(auth);

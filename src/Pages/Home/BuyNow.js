@@ -1,19 +1,20 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
-import useProduct from '../../CustomHook/useProduct';
-import auth from '../../firebase.init';
-import { FaShoppingCart } from 'react-icons/fa';
 import { useParams } from 'react-router-dom';
+import auth from '../../Firebase/firebase.init';
+import useProducts from '../CustomHook/useProducts';
 import { toast } from 'react-toastify';
-const BuyNow = () => {
+import { FaShoppingCart } from 'react-icons/fa';
 
+const BuyNow = () => {
     const [user] = useAuthState(auth)
     const { id } = useParams();
-    const [products] = useProduct();
+    const [products] = useProducts();
     const [product, setProduct] = useState({});
     const [relode, setRelode] = useState(false);
-    const { _id, name, img, price, min_quantity, available_quantity, description } = product;
-    const [order, setOrder] = useState(40);
+    const { _id, name, img, price, minQuantity, avlbQuantity, description } = product;
+    const [order, setOrder] = useState(20);
+
 
     useEffect(() => {
         const url = `http://localhost:5000/product/${id}`;
@@ -27,7 +28,7 @@ const BuyNow = () => {
 
 
     const handleIncrease = (product) => {
-        if (available_quantity < 1) {
+        if (avlbQuantity < 1) {
             return toast("Available quantity not less than 1");
         } else {
 
@@ -35,8 +36,8 @@ const BuyNow = () => {
         }
         const exist = products.find(pd => pd._id === product._id)
         if (exist) {
-            exist.available_quantity = parseInt(exist.available_quantity) - 1;
-            const increseQuantity = exist.available_quantity;
+            exist.avlbQuantity = parseInt(exist.avlbQuantity) - 1;
+            const increseQuantity = exist.avlbQuantity;
 
             const url = `http://localhost:5000/product/${id}`;
             fetch(url, {
@@ -55,16 +56,16 @@ const BuyNow = () => {
 
     let errorss;
     const handleReduce = (product) => {
-        if (order <= 39) {
-            return toast("Minimum order quantity 40");
+        if (order <= 19) {
+            return toast("Minimum order quantity 20");
         } else {
 
             setOrder(order - 1)
         }
         const exist = products.find(pd => pd._id === product._id)
         if (exist) {
-            exist.available_quantity = parseInt(exist.available_quantity) + 1;
-            const reduceQuantity = exist.available_quantity;
+            exist.avlbQuantity = parseInt(exist.avlbQuantity) + 1;
+            const reduceQuantity = exist.avlbQuantity;
             const url = `http://localhost:5000/product/${id}`;
             fetch(url, {
                 method: 'PUT',
@@ -118,15 +119,15 @@ const BuyNow = () => {
                 </figure>
                 <div className="card-body items-center text-center">
                     <h2 className="card-title">{name}</h2>
-                    <p><span className='font-bold'>Minimum Quantity:</span> <span className='text-xl font-bold'>40</span></p>
-                    <p><span className='font-bold'>Available Quantity:</span> <span className='text-xl font-bold'>{available_quantity}</span></p>
+                    <p><span className='font-bold'>Minimum Quantity:</span> <span className='text-xl font-bold'>20</span></p>
+                    <p><span className='font-bold'>Available Quantity:</span> <span className='text-xl font-bold'>{avlbQuantity}</span></p>
                     <p><span className='font-bold'>Order Quantity:</span> <span className='font-bold text-xl'>{order}</span></p>
                     <p><button onClick={() => handleReduce(product)} className='btn btn-sm text-3xl'>-</button><span className='text-2xl font-bold mx-3'> </span><button onClick={() => handleIncrease(product)} className='btn btn-sm text-3xl'>+</button></p>
                     {errorss}
                     <p><span className='font-bold'>Per unit price:</span> <span className='font-bold text-xl'>${price}</span></p>
                     <p className='font-bold text-indigo-400'>{description}</p>
                 </div>
-                <label disabled={order < 40 || available_quantity < 1} for="confirm_purchase" className="btn modal-button"><span className='pr-3 text-2xl'><FaShoppingCart /></span> go to purchase</label>
+                <label disabled={order < 20 || avlbQuantity < 1} for="confirm_purchase" className="btn modal-button"><span className='pr-3 text-2xl'><FaShoppingCart /></span> go to purchase</label>
             </div>
 
             <div>
@@ -142,8 +143,8 @@ const BuyNow = () => {
                             <input type="text" name='phone' placeholder="Phone" className="input input-bordered w-full max-w-xs" />
                             <input type="submit" value='Confirm' className="btn btn-primary input-bordered w-full max-w-xs" />
                         </form>
-                        <div className="modal-action justify-center rounded">
-                            <label for="confirm_purchase" className="btn bg-red-500 btn-sm">Cancel</label>
+                        <div className="modal-action">
+                            <label for="confirm_purchase" className="btn">Cancel</label>
                         </div>
                     </div>
                 </div>
@@ -151,6 +152,5 @@ const BuyNow = () => {
         </div>
     );
 };
-
 
 export default BuyNow;

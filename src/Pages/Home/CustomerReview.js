@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FaStar } from 'react-icons/fa';
-import Loading from '../../Pages/Shared/Loading';
+import Loading from '../Loading/Loading';
 
 const CustomerReview = () => {
     const [reviews, setReviews] = useState([]);

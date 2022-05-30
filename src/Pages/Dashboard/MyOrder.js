@@ -2,9 +2,9 @@ import { signOut } from 'firebase/auth';
 import React, { useEffect, useState } from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { useNavigate } from 'react-router-dom';
-import auth from '../../firebase.init';
-import Loading from '../../Pages/Shared/Loading';
-import TableRow from '../../Pages/TableRow/TableRow';
+import auth from '../../Firebase/firebase.init';
+import Loading from '../Loading/Loading';
+import TableRow from '../TableRow/TableRow';
 
 const MyOrder = () => {
     const [user] = useAuthState(auth);

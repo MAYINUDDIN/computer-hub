@@ -1,6 +1,6 @@
 import React from 'react';
-import useProducts from '../../CustomHook/useProduct';
-import Loading from '../../Pages/Shared/Loading';
+import useProducts from '../CustomHook/useProducts';
+import Loading from '../Loading/Loading';
 
 const ManageProducts = () => {
     const [products, setProducts] = useProducts();

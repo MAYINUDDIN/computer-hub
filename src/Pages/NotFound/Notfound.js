@@ -1,14 +1,13 @@
 import React from 'react';
-import img from '../../assets/images/notfound.jpg';
+import Opps from '../../images/404.jpg';
+import './NotFound.css';
 
-const Notfound = () => {
+const NotFound = () => {
     return (
-        <div>
-
-            <img src={img} alt="" />
-
+        <div className='flex justify-center items-center not-found'>
+            <img className='' src={Opps} alt="" />
         </div>
     );
 };
 
-export default Notfound;
+export default NotFound;

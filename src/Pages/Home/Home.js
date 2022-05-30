@@ -1,20 +1,20 @@
 import React from 'react';
-import Footer from '../Shared/Footer';
-import AllProduct from '../Product/AllProduct';
 import Banner from './Banner';
-import PopulerItems from './PopulerItems';
-import Summary from './Summary';
+import ChooseUs from './ChooseUs';
 import CustomerReview from './CustomerReview';
+import NewsFeed from './NewsFeed';
+import Parts from './Parts';
+import Summary from './Summary';
 
 const Home = () => {
     return (
         <div>
             <Banner></Banner>
-            <AllProduct></AllProduct>
-            <PopulerItems></PopulerItems>
+            <Parts></Parts>
             <Summary></Summary>
             <CustomerReview></CustomerReview>
-
+            <ChooseUs></ChooseUs>
+            <NewsFeed></NewsFeed>
         </div>
     );
 };
