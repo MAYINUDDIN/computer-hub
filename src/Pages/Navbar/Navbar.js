@@ -15,14 +15,14 @@ const Navbar = () => {
 
 
     const menuItems = <>
-        <li><Link to='/home' className='text-lg font-bold text-white drop-shadow '><span><FaHome /></span><span>Home</span></Link></li>
-        <li><Link to='/blogs' className='text-lg font-bold text-white drop-shadow '>Blogs</Link></li>
-        <li><Link to='/portfolio' className='text-lg font-bold text-white drop-shadow '>Portfolio</Link></li>
-        {user && <li><Link to='/dashboard' className='text-lg font-bold  text-white drop-shadow'>Dashboard</Link></li>}
+        <li><Link to='/home' className='text-lg font-bold lg:text-white drop-shadow '><span><FaHome /></span><span>Home</span></Link></li>
+        <li><Link to='/blogs' className='text-lg font-bold lg:text-white drop-shadow '>Blogs</Link></li>
+        <li><Link to='/portfolio' className='text-lg font-bold lg:text-white drop-shadow '>Portfolio</Link></li>
+        {user && <li><Link to='/dashboard' className='text-lg font-bold  lg:text-white drop-shadow'>Dashboard</Link></li>}
         {
-            user ? <li><button onClick={logout} className='text-lg font-bold text-white drop-shadow'>Logout<span><FaSignOutAlt /></span></button></li> : <li><Link to='/login' className='text-xl font-bold'>Login<span><FaLock /></span></Link></li>
+            user ? <li><button onClick={logout} className='text-lg font-bold lg:text-white drop-shadow'>Logout<span><FaSignOutAlt /></span></button></li> : <li><Link to='/login' className='text-xl font-bold'>Login<span><FaLock /></span></Link></li>
         }
-        <li><Link to='/register' className='text-lg font-bold text-white drop-shadow'>Register<FaSignInAlt /></Link></li>
+        <li><Link to='/register' className='text-lg font-bold lg:text-white drop-shadow'>Register<FaSignInAlt /></Link></li>
     </>
     return (
         <div className="navbar px-12 bg-success">

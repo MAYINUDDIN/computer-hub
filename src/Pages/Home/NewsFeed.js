@@ -31,7 +31,7 @@ const NewsFeed = () => {
                     <p className='text-3xl mb-3'>Contact Us</p>
                     <p className='flex items-center gap-3'> <span><FaAddressBook /></span> <span>Address: North Shajanpur, Dhaka</span></p>
                     <p className='flex items-center gap-3 my-5'><span><FaPhoneVolume /></span> <span>Phone: <a className='underline' href="#">+801999070234</a></span></p>
-                    <p className='flex items-center gap-3'><span><FaMailBulk /></span> <span>Email: <a className='text-blue-500 font-bold underline' href="/">{user ? user?.email : "borhan@manager.com"}</a></span></p>
+                    <p className='flex items-center gap-3'><span><FaMailBulk /></span> <span>Email: <a className='text-blue-500 font-bold underline' href="/">{user ? user?.email : "mainu@gmai.com"}</a></span></p>
                 </div>
             </div>
         </div>
